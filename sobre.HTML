@@ -3,88 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia e Funcionamento dos Projetores de Cinema</title>
-    <style>
-        /* Estilizacao basica para a pagina ficar centralizada e responsiva */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #121212;
-            color: #ffffff;
-        }
-
-        header, footer {
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        h1 {
-            color: #e50914; /* Vermelho estilo cinema */
-        }
-
-        section {
-            margin-bottom: 40px;
-            background-color: #1e1e1e;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        /* Torna a imagem do infografico e o video ajustaveis a tela */
-        .midia-container img, 
-        .video-container iframe, 
-        .video-container video {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 15px auto;
-            border-radius: 8px;
-        }
-
-        /* Mantem a proporcao 16:9 para videos do YouTube */
-        .video-responsive {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-        }
-
-        .video-responsive iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+    <title>CineProjetores - Tecnologias</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>A Evolucao dos Projetores de Cinema</h1>
-        <p>Do Cinematografo aos Projetores Laser de Alta Definicao</p>
+        <h1>Tecnologias de Projecao</h1>
+        <p>Explore as tecnologias incriveis por tras das grandes telas de cinema.</p>
     </header>
 
-    <main>
-        <section id="infografico">
-            <h2>Infografico: Como Funciona um Projetor</h2>
-            <p>Confira no esquema abaixo o caminho da luz e a mecanica por tras da projecao cinematografica:</p>
-            
-            <div class="midia-container">
-                <img src="imagens/infografico.jpg" alt="Infografico explicativo sobre o funcionamento de um projetor de cinema">
-            </div>
+    <main class="container flex-column">
+        
+        <section class="card">
+            <h2>Evolucao Tecnica</h2>
+            <ul class="lista-tech">
+                <li><strong>Pelecula (35mm / 70mm):</strong> Projecao mecanica tradicional com lampadas de xenonio.</li>
+                <li><strong>Digital (DLP):</strong> Utiliza microespelhos para refletir a luz com altissima precisao.</li>
+                <li><strong>Laser:</strong> A tecnologia mais moderna, garantindo brilho intenso, cores vivas e alta eficiencia.</li>
+            </ul>
         </section>
 
-        <section id="video">
-            <h2>Veja em Acao</h2>
-            <p>Assista ao video abaixo para entender a operacao dos projetores nas salas de exibicao:</p>
+        <section class="card">
+            <h2>Infografico da Projecao de cinema.</h2>
+            <p>Veja no esquema abaixo como a luz e transformada em imagem na tela grande:</p>
+            
+            <img src="infografico.jpg" alt="Infografico explicativo sobre projetores de cinema" class="imagem-midia">
+        </section>
 
-            <div class="video-responsive">
+        <section class="card">
+            <h2>Demonstracao em Video</h2>
+            <p>Assista ao video explicativo sobre o funcionamento dos projetores:</p>
+            
+            <div class="video-container">
                 <iframe 
                     src="https://www.youtube.com/embed/SEU_VIDEO_AQUI" 
-                    title="Video sobre projetores de cinema" 
+                    title="Video sobre Projetores de Cinema" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
@@ -92,10 +46,15 @@
             </div>
 
             </section>
+
+        <div class="center-btn">
+            <a href="index.html" class="btn btn-secundario">&larr; Voltar ao Inicio</a>
+        </div>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 - Projeto desenvolvido por Danielle e Iris.</p>
+        <p>&copy; Projeto sobre Projetores de Cinema</p>
     </footer>
 
 </body>
